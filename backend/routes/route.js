@@ -30,11 +30,7 @@ router.post('/AdminReg', adminRegister);
 router.post('/AdminLogin', adminLogIn);
 
 router.get("/Admin/:id", getAdminDetail) 
-// router.delete("/Admin/:id", deleteAdmin)
 
-// router.put("/Admin/:id", updateAdmin)
-
-// Student
 
 router.post('/StudentReg', studentRegister);
 router.post('/StudentLogin', studentLogIn)
@@ -45,15 +41,6 @@ router.get("/Student/:id", getStudentDetail)
 router.delete("/Students/:id", deleteStudents)
 router.delete("/StudentsClass/:id", deleteStudentsByClass)
 router.delete("/Student/:id", deleteStudent)
-
-// router.put("/Student/:id", updateStudent)
-
-// router.put('/UpdateExamResult/:id', updateExamResult)
-
-// router.put('/StudentAttendance/:id', studentAttendance)
-
-// router.put('/RemoveAllStudentsSubAtten/:id', clearAllStudentsAttendanceBySubject);
-// router.put('/RemoveAllStudentsAtten/:id', clearAllStudentsAttendance);
 
 router.put('/RemoveStudentSubAtten/:id', removeStudentAttendanceBySubject);
 router.put('/RemoveStudentAtten/:id', removeStudentAttendance)
@@ -70,9 +57,6 @@ router.delete("/Teachers/:id", deleteTeachers)
 router.delete("/TeachersClass/:id", deleteTeachersByClass)
 router.delete("/Teacher/:id", deleteTeacher)
 
-// router.put("/TeacherSubject", updateTeacherSubject)
-
-// router.post('/TeacherAttendance/:id', teacherAttendance)
 
 // Notice
 
